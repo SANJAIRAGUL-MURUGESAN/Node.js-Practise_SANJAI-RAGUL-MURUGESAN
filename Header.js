@@ -1,6 +1,12 @@
-const http = createServer((req,res)=>{
+const http = require('http')
+const server = http.createServer((req,res)=>{
+
     // Setting Header for Response
+
     res.setHeader('content-type' , 'plain/text') 
+
+    // Prints Output on the browser in response
+
     res.writeHead(200,{
         'content-type' : 'plain/text'
     })
